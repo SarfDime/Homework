@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <script defer src="form.js"></script>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div align="center">
+        <form id="form1">
+            <fieldset style=" background-color: rgb(255, 242, 127); width: 400px">
+                <form>
+                    <h1 align="center">Dime's Lunch Special</h1>
+                    <p align="center">Monday trough Friday</p>
+                    <p align="center">11am - 3pm</p>
+                    <div align="left">
+                        <fieldset style="background-color: orange;">
+                            <label for="ime">First name:</label>
+                            <input type="text" id="ime" name="ime">
+                            <br>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset style="background-color: orange">
+                            <legend><h3>Burgers</h3></legend>
+                            <input type="radio" name="chek2" id="a1">
+                            <label for="a1">Big Mac <strong>$6.90</strong> </label><br>
+                            <input type="radio" name="chek2" id="a2">
+                            <label for="a2">Cheese Burger <strong>$4.90</strong> </label>
+                            <br>
+                            <input type="radio" name="chek2" id="a3">
+                            <label for="a3">Veggie Burger <strong>$5.90</strong> </label><br>
+                            <input type="radio" name="chek2" id="a4">
+                            <label for="a4">Dime Burger <strong>$8.90</strong> </label>
+                            <hr>
+                            <input type="checkbox" name="glt" id="a5">
+                            <label for="a5">Gluten Free Bread
+                                (75&#162; extra)</label>
+                        </fieldset>
+                        <br>
+                        <fieldset style="background-color: orange">
+                            <legend><h3>Sauces</h3></legend>
+                            <input type="checkbox" name="chek5" id="b1">
+                            <label for="b1">Mexicano</label><br>
+                            <input type="checkbox" name="chek6" id="b2">
+                            <label for="b2">Iceberg</label>
+                            <br>
+                            <input type="checkbox" name="chek7" id="b3">
+                            <label for="b3">Ranch</label>
+                            <br>
+                            <hr>
+                            <strong>$1.10 Each</strong>
+                        </fieldset>
+                        <br>
+                        <fieldset style="background-color: orange">
+                            <legend><h3>Drinks</h3></legend>
+                            <select id="drinks" name="drinks">
+                                <option selected>Select Drink</option>
+                                <option>Pepsi</option>
+                                <option>Fanta</option>
+                                <option>Coca-Cola</option>
+                                <option>Sprite</option>
+                                <br>
+                                <hr>
+                                <br>
+                                <input type="checkbox" name="dri" id="c1">
+                                <label for="c1">Large Drink
+                                    (75&#162; extra)</label>
+                                    <br>
+                                    <hr>
+                                    <strong>$2 Each</strong>
+                        </fieldset>
+                        <br>
+                        <button type="button" id="k1">Place Order</button>
+                        <input type="reset" value="Clear form">
+                    </div>
+                </form>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+
+</html>

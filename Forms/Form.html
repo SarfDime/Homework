@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form>
+            <fieldset style="width: 400px">
+                <form>
+                    <h1 align="center">Lunch Special</h1>
+                    <p align="center">Monday trough Friday</p>
+                    <p align="center">11am - 3pm</p>
+                    <p><strong>$9.95</strong> <small>(plus tax)</small> </p>
+                    <div align="left">
+                        <fieldset style="width: 400px;">
+                            <legend>Order Info:</legend>
+                            <label for="ime">First name:</label>
+                            <input type="text" id="ime" name="ime" required>
+                            <br>
+                            <br>
+                            <form>
+                                  <input type="radio" id="here" name="chek1">
+                                  <label for="here">Here</label><br>
+                                  <input type="radio" id="toGo" name="chek1">
+                                  <label for="toGo">To Go</label><br>
+                            </form>
+                        </fieldset>
+                        <br>
+                        <fieldset style="width: 400px">
+                            <legend>Sandwitches</legend>
+                            <h4>Mon</h4>
+                            <input type="radio" name="chek2" id="tom">
+                            <label for="tom">Tomato Mozzarella</label><br>
+                            <input type="radio" name="chek2" id="chs">
+                            <label for="tom">Chicken Salad</label>
+                            <br>
+
+                            <h4>Tuesday</h4>
+                            <input type="radio" name="chek2" id="gsw">
+                            <label for="gsw">Greek Salad Wrap</label><br>
+                            <input type="radio" name="chek2" id="tow">
+                            <label for="tow">Toto Wrap</label>
+                            <br>
+
+                            <h4>Wednesday</h4>
+                            <input type="radio" name="chek2" id="rph">
+                            <label for="rph">Red Pepper Hummus</label><br>
+                            <input type="radio" name="chek2" id="rot">
+                            <label for="rot">Roasted Turkey</label>
+                            <br>
+
+                            <h4>Thursday</h4>
+                            <input type="radio" name="chek2" id="cgh">
+                            <label for="cgh">Carrot-Ginger Hummus Wrap</label><br>
+                            <input type="radio" name="chek2" id="egs">
+                            <label for="egs">Egg Salad</label>
+                            <br>
+
+                            <h4>Friday</h4>
+                            <input type="radio" name="chek2" id="daw">
+                            <label for="daw">Dado Wrap</label><br>
+                            <input type="radio" name="chek2" id="tus">
+                            <label for="tus">Tuna Salad</label>
+                            <br>
+                            <hr>
+                            <input type="checkbox" name="glt" id="glt">
+                            <label for="glt">Gluten Free Bread
+                                (75&#162; extra)</label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Snack</legend>
+                            <h4>Snacks</h4>
+                            <input type="radio" name="chek3" id="apl">
+                            <label for="apl">Apple</label><br>
+                            <input type="radio" name="chek3" id="ban">
+                            <label for="ban">Banana</label>
+                            <br>
+                            <input type="radio" name="chek3" id="chp">
+                            <label for="chp">Potato Chips</label>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Drink</legend>
+                            <h4>Drinks</h4>
+                            <select name="drinks">
+                                <option selected>Coffee</option>
+                                <option>Iced Tea</option>
+                                <option>Organic Peppermint</option>
+                                <option>Hot Sencha Green Tea</option>
+                                <option>Iced Sencha Green</option>
+                                <option>Hot Keemun Black Tea</option>
+                                <option>Iced Keemun Black</option>
+                            </select>
+                            <br>
+                            <hr>
+                            <input type="checkbox" name="dri" id="dri">
+                            <label for="dri">Large Drink
+                                (75&#162; extra)</label>
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Submit Order">
+                        <input type="reset" value="Clear form">
+                    </div>
+                </form>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

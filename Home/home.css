@@ -1,0 +1,257 @@
+:root {
+    --priColor: rgba(255, 255, 255);
+    --secColor: rgb(0, 0, 0);
+}
+
+.dark-mode {
+    --priColor: rgb(0, 0, 0);
+    --secColor: rgba(255, 255, 255, 0.98);
+}
+
+body {
+    background-color: var(--priColor);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 0, 234, 0.646));
+    color: var(--secColor);
+}
+
+.der {
+    display: flex;
+    border-radius: 1em;
+    justify-content: space-around;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 8), 3px 3px 5px 3px black;
+    margin: 1rem 10rem 0rem 10rem;
+}
+
+.der h1 {
+    text-shadow: 4px 4px 15px black, 4px 4px 15px white;
+}
+
+.der #dimg {
+    color: rgb(0, 255, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: linear;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 4px 4px 15px black;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 0), 3px 3px 5px 3px black;
+    border-radius: 1em;
+    margin: 0 10rem 0 10rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+nav img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.placeholders img {
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+}
+
+#home,
+#expl,
+#user,
+#about,
+#up,
+#left,
+#right {
+    width: 25px;
+    height: 25px;
+}
+
+#darb {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Home */
+
+.outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.inner3 {
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 8), 3px 3px 5px 3px black;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.inner3 img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.inner1 {
+    display: flex;
+    width: 600px;
+    height: 900px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 8), 3px 3px 5px 3px black;
+    margin-top: 2rem;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.photo1 {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.photo1 img {
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.646);
+    max-width: 100%;
+    border-radius: 1em;
+
+}
+
+.photo1 a :hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s ease-in;
+}
+
+.inner2 {
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 8), 3px 3px 5px 3px black;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.inner2 img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+/* Profile Page */
+
+.profs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 8), 3px 3px 5px 3px black;
+    border-radius: 1em;
+    margin: 1rem 15rem 0 15rem;
+    padding: 2rem 0 2rem 0;
+}
+
+/* About Us */
+
+.mabaut {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 0), 3px 3px 5px 3px black;
+    border-radius: 1em;
+    margin: 2rem 15rem 0 15rem;
+    padding-bottom: 3%;
+}
+
+.mabaut ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem;
+    padding-right: 2rem;
+}
+
+.mabaut ul li a {
+    text-decoration: none;
+    color: var(--secColor);
+    text-shadow: 4px 4px 15px rgb(0, 0, 0), 4px 4px 15px white;
+}
+
+.mabaut ul li a:hover {
+    color: rgb(0, 255, 0);
+    transition: 0.2s;
+}
+
+/* Explore Page 1 and 2*/
+
+.exfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 40% 1rem 40%;
+}
+
+.explphotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 0), 3px 3px 5px 3px black;
+    margin: 3rem 1rem 1rem 1rem;
+    border-radius: 1em;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    overflow: hidden;
+}
+
+.explphotos img {
+    box-shadow: 3px 3px 8px 3px black, 1px 1px 5px 1px white;
+    max-width: 30%;
+    border-radius: 1em;
+    margin: 1rem;
+}
+
+/* Smaller Screens */
+
+@media screen and (max-width: 1440px) {
+
+    .der {
+        margin: 2rem 1rem 0 1rem;
+    }
+
+    nav ul li {
+        margin: 0rem 0rem 0rem 1rem;
+    }
+
+    .foot {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .outer :nth-child(1) {
+        order: 2;
+    }
+
+    .inner1 {
+        margin-bottom: 1rem;
+    }
+
+    .inner3 {
+        margin-top: 14px;
+    }
+
+    .profs {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .mabaut {
+        margin: 2rem 1rem 0 1rem;
+    }
+}
