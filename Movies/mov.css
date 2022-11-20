@@ -3,16 +3,18 @@
 :root {
     --priColor: rgba(255, 255, 255);
     --secColor: rgb(0, 0, 0);
+    --tertColor: rgba(0, 255, 255, 0.619);
 }
 
 .dark-mode {
     --priColor: rgb(0, 0, 0);
-    --secColor: rgba(255, 255, 255, 0.98);
+    --secColor: rgb(255, 255, 255);
+    --tertColor: rgba(0, 54, 68, 0.326);
 }
 
 body {
     background-color: var(--priColor);
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(3, 234, 255));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--tertColor));
     color: var(--secColor);
 }
 
@@ -36,9 +38,14 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.732);
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.732), 1px 1px 5px 1px white;
     margin: 1rem 30rem 1rem 30rem;
+}
+
+.movHead a {
+    text-decoration: none;
+    color: var(--secColor);
+    display: inline-block;
 }
 
 .movHead ul li {
@@ -111,6 +118,7 @@ body {
 
 .movies h1 {
     font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 1px 0px 1px #000000;
 }
 
 .movies p {
@@ -119,24 +127,33 @@ body {
 
 .movies h3 {
     font-family: 'Fragment Mono', monospace;
+    text-shadow: 0px 0px 1px #000000;
 }
 
 .mov1 {
     margin: 1rem;
     box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), gold);
+    background-image: linear-gradient(to left, rgba(255, 233, 233, 0), gold);
     padding-right: 1rem;
 }
 
 .mov2 {
     margin: 1rem;
     box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), silver);
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), silver);
     text-align: justify;
     padding-right: 1rem;
 }
 
-#tex {
+#tex1 {
+    inline-size: 47rem;
+    overflow-wrap: break-word;
+}
+#tex2 {
+    inline-size: 47rem;
+    overflow-wrap: break-word;
+}
+#tex3 {
     inline-size: 47rem;
     overflow-wrap: break-word;
 }
@@ -144,7 +161,7 @@ body {
 .mov3 {
     margin: 1rem;
     box-shadow: 1px 1px 8px 1px rgb(0, 0, 0);
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #cd7f32);
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #cd7f32);
 }
 
 /* For smaller screens */
@@ -159,7 +176,7 @@ body {
 
     .movHead {
         margin: 1rem 1rem 1rem 1rem;
-        justify-content: flex-start;
+
     }
 
     .movHead h1 {
@@ -170,7 +187,7 @@ body {
         margin: 5px;
     }
 
-    #tex {
+    #tex1 {
         inline-size: auto;
         padding: 1rem;
     }
