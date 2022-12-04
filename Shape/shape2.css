@@ -1,0 +1,219 @@
+.outer {
+    position: absolute;
+    width: 625px;
+    height: 640px;
+    left: 30%;
+}
+
+#box1 {
+    position: absolute;
+    background-color: #e1d5b7;
+    width: 150px;
+    height: 59px;
+    border-right: 15px solid #10100f;
+    border-bottom: 10px solid #10100f;
+}
+
+#box2 {
+    position: absolute;
+    background-color: #ecd1a5;
+    width: 225px;
+    height: 59px;
+    border-right: 15px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 25.5%;
+}
+
+#box3 {
+    position: absolute;
+    background-color: #eeb046;
+    width: 180px;
+    height: 59px;
+    border-right: 10px solid #10100f;
+    border-bottom: 8px solid #10100f;
+    left: 63%;
+}
+
+#box4 {
+    position: absolute;
+    background-color: #f6e4b3;
+    width: 30px;
+    height: 434px;
+    border-bottom: 10px solid #10100f;
+    border-left: 2px solid #10100f;
+    left: 93%;
+}
+
+#box5 {
+    position: absolute;
+    background-color: #f5e5b1;
+    width: 75px;
+    height: 165px;
+    top: 10.4%;
+    border-top: 3px solid #10100f;
+    border-right: 10px solid #10100f;
+    border-bottom: 15px solid #10100f;
+}
+
+#box6 {
+    position: absolute;
+    background-color: #dcd1b2;
+    width: 75px;
+    height: 190px;
+    top: 38.1%;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+}
+
+#box7 {
+    position: absolute;
+    background-color: #eeb046;
+    width: 179px;
+    height: 165px;
+    border-top: 4.6px solid #10100f;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 63%;
+    top: 10.2%;
+}
+
+#box8 {
+    position: absolute;
+    background-color: #d53b21;
+    border-top: 4.6px solid #10100f;
+    border-right: 10.5px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    top: 10.2%;
+    left: 13.5%;
+    height: 300px;
+    width: 300px;
+
+}
+
+#box9 {
+    position: absolute;
+    background-color: #dbcc9e;
+    width: 85px;
+    height: 125.5px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 63%;
+    top: 38.1%;
+}
+
+#box10 {
+    position: absolute;
+    background-color: #edd5b0;
+    width: 85px;
+    height: 125.5px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 78.1%;
+    top: 38.1%;
+}
+
+#box11 {
+    position: absolute;
+    background-color: #d1c7ad;
+    width: 180px;
+    height: 55px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 62.9%;
+    top: 59.2%;
+}
+
+#box12 {
+    position: absolute;
+    background-color: #bbab90;
+    width: 143px;
+    height: 55px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 38.7%;
+    top: 59.2%;
+}
+
+#box13 {
+    position: absolute;
+    background-color: #211615;
+    width: 148px;
+    height: 120px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 13.5%;
+    top: 59.2%;
+    z-index: 2;
+}
+
+#box14 {
+    position: absolute;
+    background-color: #eeb046;
+    width: 75px;
+    height: 119.93px;
+    border-right: 10px solid #10100f;
+    top: 69.2%;
+}
+
+#box15{
+    position: absolute;
+    background-color: #d8caa3;
+    width: 143px;
+    height: 55px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 38.7%;
+    top: 69.3%;
+}
+
+#box16 {
+    position: absolute;
+    background-color: #d53b21;
+    border-left: 2px solid #10100f;
+    width: 30px;
+    height: 119px;
+    left: 93%;
+    top: 69.3%;
+}
+
+#box17 {
+    position: absolute;
+    background-color: #dfc8a8;
+    width: 148px;
+    height: 55px;
+    border-right: 10px solid #10100f;
+    left: 13.5%;
+    top: 79.3%;
+}
+
+#box18 {
+    position: absolute;
+    background-color: #30266c;
+    width: 179px;
+    height: 87px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 63%;
+    top: 69.3%;
+}
+
+#box19 {
+    position: absolute;
+    background-color: #1b1411;
+    width: 142px;
+    height: 23px;
+    border-right: 10px solid #10100f;
+    border-bottom: 10px solid #10100f;
+    left: 38.7%;
+    top: 79.3%;
+}
+
+#box20 {
+    position: absolute;
+    background-color: #dac9ac;
+    width: 331px;
+    height: 23px;
+    border-right: 10px solid #10100f;
+    left: 38.7%;
+    top: 84.3%;
+}

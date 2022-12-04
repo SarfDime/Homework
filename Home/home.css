@@ -9,9 +9,14 @@
 }
 
 body {
+    position: relative;
     background-color: var(--priColor);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 0, 234, 0.646));
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 0, 234, 0.646)); */
     color: var(--secColor);
+}
+
+.leftSide{
+    position: absolute;
 }
 
 .der {
@@ -21,9 +26,39 @@ body {
     box-shadow: 1px 1px 5px 2px rgb(0, 255, 8), 3px 3px 5px 3px black;
     margin: 1rem 10rem 0rem 10rem;
 }
-
+.der a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--secColor);
+}
 .der h1 {
     text-shadow: 4px 4px 15px black, 4px 4px 15px white;
+}
+
+.der a[data-tool-tip]{
+    position: relative;
+}
+.der a[data-tool-tip]::after{
+    position: absolute;
+    content: attr(data-tool-tip);
+    display: block;
+    transform: scale(0);
+    padding: 0.1em;
+    background-color: var(--priColor);
+    color: var(--secColor);
+    border: 1px solid var(--secColor);
+    border-radius: 3px;
+    top: 0;
+    left: 50%;
+    white-space: nowrap;
+    transition: transform ease 300ms, top ease 300ms, left ease 300ms;
+}
+
+.der a[data-tool-tip]:hover::after{
+    transform: scale(1);
+    top: -40%;
+    left: 100%;
 }
 
 .der #dimg {
@@ -58,6 +93,32 @@ nav img:hover {
     transition: 0.2s;
 }
 
+nav a{
+    position: relative;
+}
+
+nav span{
+    position: absolute;
+    transform: scale(0);
+    padding: 0.1em;
+    background-color: var(--priColor);
+    color: var(--secColor);
+    border: 1px solid var(--secColor);
+    border-radius: 3px;
+    top: 0;
+    left: 0%;
+    white-space: nowrap;
+    transition: transform ease 300ms, top ease 300ms, left ease 300ms;
+    z-index: 3;
+}
+
+nav a:hover span{
+    transform: scale(1);
+    top: -70%;
+    left: 90%;
+    
+}
+
 .placeholders img {
     opacity: 0;
     width: 0%;
@@ -76,9 +137,33 @@ nav img:hover {
 }
 
 #darb {
+    position: relative;
     width: 40px;
     height: 40px;
     cursor: pointer;
+}
+#darbu{
+    position: relative;
+}
+#darbu span{
+    position: absolute;
+    transform: scale(0);
+    padding: 0.1em;
+    background-color: var(--priColor);
+    color: var(--secColor);
+    border: 1px solid var(--secColor);
+    border-radius: 3px;
+    top: 0%;
+    left: -30%;
+    white-space: nowrap;
+    transition: transform ease 300ms, top ease 300ms, left ease 300ms;
+    z-index: 3;
+}
+
+#darbu:hover span{
+    transform: scale(1);
+    top: -40%;
+    left: 80%;
 }
 
 /* Home */
@@ -192,6 +277,28 @@ nav img:hover {
 
 /* Explore Page 1 and 2*/
 
+#up{
+    background-image: linear-gradient(to right, var(--priColor), rgba(0, 255, 0, 100));
+    padding: 0.8rem;
+    border-radius: 40%;
+}
+
+.btb{
+    position: fixed;
+    top: 80%;
+    right: 1rem;
+    scale: 0;
+    transition: ease 300ms;
+}
+
+.btbv{
+    scale: 1;
+    position: fixed;
+    top: 80%;
+    right: 1rem;
+    
+}
+
 .exfoot {
     display: flex;
     flex-direction: column;
@@ -204,19 +311,29 @@ nav img:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 1px 1px 5px 2px rgb(0, 255, 0), 3px 3px 5px 3px black;
-    margin: 3rem 1rem 1rem 1rem;
+    margin: 3rem 20rem 1rem 20rem;
     border-radius: 1em;
     padding-bottom: 3%;
     padding-top: 3%;
     overflow: hidden;
 }
 
-.explphotos img {
+
+.phot{
     box-shadow: 3px 3px 8px 3px black, 1px 1px 5px 1px white;
     max-width: 30%;
     border-radius: 1em;
     margin: 1rem;
+    transition: ease 800ms;
+    scale: 0;
+}
+
+.photV{
+    box-shadow: 3px 3px 8px 3px black, 1px 1px 5px 1px white;
+    max-width: 30%;
+    border-radius: 1em;
+    margin: 1rem;
+    scale: 1;
 }
 
 /* Smaller Screens */

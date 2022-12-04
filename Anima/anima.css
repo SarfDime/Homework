@@ -1,0 +1,322 @@
+.extraMain {
+    display: flex;
+    justify-content: center;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 200px;
+
+}
+
+.outer {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.progress {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    height: 1.15em;
+    border: 3px solid #000000;
+}
+
+.progress:hover .bar {
+    position: absolute;
+    background-color: #ff0000;
+    width: 0px;
+    height: 1.15em;
+    animation: load 4s infinite linear;
+}
+
+.progress:hover .loadText {
+    opacity: 100;
+    transition: 500ms;
+}
+
+.loadText {
+    position: absolute;
+    z-index: 2;
+    left: calc(100% - 8em);
+    opacity: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+        background-color: yellow;
+    }
+
+    25% {
+        width: 25%;
+        background-color: green;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    63% {
+        background-color: blue;
+    }
+
+    75% {
+        width: 75%;
+
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.progress2 {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    height: 1.5em;
+    border: 1px solid #000000;
+}
+
+.progress2:hover .loadText2 {
+    opacity: 100;
+    transition: 500ms;
+}
+
+.progress2:hover .bar2 {
+    position: absolute;
+    bottom: 0;
+    background-color: #00ff4c;
+    width: 0px;
+    height: 5px;
+    animation: load2 4s infinite linear;
+}
+
+.progress2:hover .bar3 {
+    position: absolute;
+    background-color: #ff0000;
+    width: 0px;
+    height: 5px;
+    animation: load2 4s infinite linear;
+}
+
+.loadText2 {
+    position: absolute;
+    opacity: 0;
+    top: calc(100% - 1.4em);
+    z-index: 2;
+    left: calc(100% - 8em);
+}
+
+@keyframes load2 {
+    0% {
+        width: 0%;
+    }
+
+    25% {
+        width: 15%;
+        background-color: blue;
+    }
+
+    50% {
+        width: 35%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    90% {
+        width: 80%;
+    }
+
+    100% {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+
+/* ------------- */
+
+.outer2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.ball {
+    background-color: #ff0000;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+}
+
+.inner {
+    border: 2px solid blueviolet;
+    position: absolute;
+    top: calc(0% + 6px);
+    left: calc(0% + 6px);
+    width: 30px;
+    height: 30px;
+}
+
+.outer2:hover .progress3 {
+    position: absolute;
+    background-color: #00ff4c;
+    width: 30px;
+    height: 30px;
+    animation: load 4s infinite linear;
+
+}
+
+.outer2:hover .ball {
+    position: absolute;
+    animation: ball1 4s infinite;
+}
+
+@keyframes ball1 {
+    25% {
+        top: 0%;
+        left: 97%;
+        background-color: rgb(255, 217, 0);
+    }
+
+    50% {
+        top: 97%;
+        left: 97%;
+        background-color: rgb(0, 255, 0);
+    }
+
+    70% {
+        top: 97%;
+        left: 0%;
+        background-color: rgb(0, 68, 255);
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+/* ------------- */
+
+.outer3 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.sphere2 {
+    position: absolute;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid #000000;
+    top: 40%;
+    left: calc(50% - 4px);
+}
+
+.sphere1 {
+    position: absolute;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid #000000;
+    top: 40%;
+    left: 75%;
+}
+
+.sphere3 {
+    position: absolute;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid #000000;
+    top: 40%;
+    left: 10%;
+}
+
+.outer3:hover .sphere2 {
+    animation: sphere22 800ms infinite ease-in-out;
+}
+
+.outer3:hover .sphere1 {
+    animation: turn2 800ms infinite ease-in-out;
+}
+
+.outer3:hover .sphere3 {
+    animation: turn1 800ms infinite ease-in-out;
+}
+
+@keyframes turn1 {
+    50% {
+        top: 15%;
+        background-color: rgb(0, 255, 0);
+    }
+
+    65% {
+        background-color: rgb(0, 0, 255);
+    }
+
+    90% {
+        top: 40%;
+        left: 75%;
+        background-color: rgb(0, 0, 255);
+    }
+
+    100% {
+        top: 40%;
+        left: 75%;
+    }
+}
+
+@keyframes sphere22 {
+    35% {
+        background-color: rgb(0, 255, 0);
+        ;
+    }
+
+    75% {
+        background-color: rgb(0, 0, 255);
+    }
+}
+
+@keyframes turn2 {
+    50% {
+        top: 65%;
+        background-color: rgb(0, 255, 0);
+    }
+
+    65% {
+        background-color: rgb(0, 0, 255);
+    }
+
+    90% {
+        top: 40%;
+        left: 10%;
+    }
+
+    100% {
+        top: 40%;
+        left: 10%;
+    }
+}
