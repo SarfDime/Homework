@@ -36,15 +36,4 @@ const observer2 = new IntersectionObserver(
 
 photos.forEach(photo => {
     observer2.observe(photo)
-})
-
-
-let a;
-let b;
-
-
-function calculate(){
-    area = a * b;
-    return area;
-}
-
+});
