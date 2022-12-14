@@ -25,74 +25,183 @@ body {
     margin-bottom: 1rem;
 }
 
-#settings{
+/* ////////// ICONS /////////// */
+
+.material-icons {
+    transition: ease-in-out 300ms;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+    opacity: 40%;
+    transition: ease 300ms;
+}
+
+#settings {
+    position: absolute;
+    font-size: 2em;
+    right: 1rem;
+    top: 0.5em;
+}
+
+#settings2 {
     position: absolute;
     font-size: 2em;
     right: 1rem;
     top: 1em;
 }
 
-#settings2{
+#dark {
     position: absolute;
-    font-size: 2em;
-    right: 1rem;
-    top: 1em;
+    font-size: 2.5em;
+    left: 0.5em;
+    top: 0.5em;
 }
 
-.settingsOverlay{
-    position: absolute;
+/* ////////// ICONS /////////// */
+
+
+/* ///////////// SETTINGS OVERLAY ///////////// */
+
+
+.settingsOverlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     right: 0.5rem;
     top: 0.5rem;
-    box-shadow: -0px 1px 10px 0px black ;
     background-color: var(--blurColor);
+    border: 1px solid var(--secColor);
     width: 55vw;
-    height: 90vh;
+    height: 89vh;
     backdrop-filter: blur(1rem);
     z-index: 2;
     padding: 2rem;
-    border-radius: 1rem;
     transition: ease 300ms, top ease 300ms, right ease 300ms;
+    border-radius: 0.5rem;
     scale: 1;
 }
 
-.vSettingsOverlay{
-    position: absolute;
+.vSettingsOverlay {
+    position: fixed;
+    display: flex;
     right: -40rem;
     top: -30rem;
     box-shadow: 1px 1px 30px 1px black;
     background-color: var(--blurColor);
+    border: 1px solid var(--secColor);
     width: 55vw;
-    height: 90vh;
+    height: 89vh;
     backdrop-filter: blur(1rem);
     z-index: 2;
-    padding: 2rem;
-    border-radius: 1rem;
     transition: ease 300ms, top ease 300ms, right ease 300ms;
     opacity: 0;
     scale: 0;
 }
 
-.settingsOverlay>.material-icons{
+.settingsOverlay>.material-icons {
     position: absolute;
     font-size: 3em;
 }
 
-.settingsCards{
-    position: absolute;
+.settingsCards {
+    /* position: absolute; */
     top: 21%;
-    left: 37%;
+    left: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--blurColor);
-    box-shadow: -1px 0 var(--secColor), 0 1px var(--secColor), 1px 0 var(--secColor), 0 -1px var(--secColor);
+    border: 2px solid var(--secColor);
+    border-radius: 0.5rem;
     backdrop-filter: blur(1rem);
     padding: 3em;
 }
 
-.settingsCards>p{
-    font-size: xx-large;
+.settingsCards>p {
+    font-size: 2.5em;
+    transition: ease-in-out 300ms;
 }
+
+.settingsCards>p:hover {
+    cursor: pointer;
+    opacity: 50%;
+    transition: ease-in-out 300ms;
+}
+
+.AboutUS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--blurColor);
+    backdrop-filter: blur(1rem);
+    border: 1px solid var(--secColor);
+    padding: 3em;
+    transition: ease-in-out 300ms;
+    scale: 0;
+}
+
+.vAboutUS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--blurColor);
+    backdrop-filter: blur(1rem);
+    border: 1px solid var(--secColor);
+    border-radius: 0.5rem;
+    padding: 3em;
+    transition: ease-in-out 300ms;
+    scale: 1;
+}
+
+#AccountBack {
+    position: relative;
+    font-size: 2.5em;
+}
+
+.AboutUS>p {
+    color: var(--secColor);
+    font-size: 2em;
+    transition: ease-in-out 300ms;
+}
+
+.AboutUS p:hover {
+    opacity: 50%;
+    transition: ease-in-out 300ms;
+}
+
+.AboutUS iframe {
+    margin-top: 1em;
+    box-shadow: 0 0 0.5em 0;
+    transition: ease-in-out 300ms;
+}
+
+.vAboutUS>p {
+    color: var(--secColor);
+    font-size: 2em;
+    transition: ease-in-out 300ms;
+}
+
+.vAboutUS p:hover {
+    opacity: 50%;
+    transition: ease-in-out 300ms;
+}
+
+.vAboutUS iframe {
+    margin-top: 1em;
+    box-shadow: 0 0 0.5em 0;
+    transition: ease-in-out 300ms;
+}
+
+/* ///////////// SETTINGS OVERLAY ///////////// */
+
+
+/* //////////// TITLE CARD ///////////// */
 
 .siteName {
     position: absolute;
@@ -137,7 +246,7 @@ body {
     position: absolute;
 }
 
-.homenav2{
+.homenav2 {
     position: fixed;
     right: 2rem;
 
@@ -257,37 +366,6 @@ nav a:hover span {
     height: 25px;
 }
 
-#darb {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-#darbu {
-    position: relative;
-}
-
-#darbu span {
-    position: absolute;
-    transform: scale(0);
-    padding: 0.1em;
-    background-color: var(--priColor);
-    color: var(--secColor);
-    border: 1px solid var(--secColor);
-    border-radius: 3px;
-    top: 0%;
-    left: -30%;
-    white-space: nowrap;
-    transition: transform ease 300ms, top ease 300ms, left ease 300ms;
-    z-index: 3;
-}
-
-#darbu:hover span {
-    transform: scale(1);
-    top: -40%;
-    left: 80%;
-}
 
 /* Home */
 
