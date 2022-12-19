@@ -110,8 +110,6 @@ function fuLog() {
     console.log(e);
     console.log(Total);
     console.log(list);
-
-
 }
 */
 
